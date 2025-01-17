@@ -23,6 +23,26 @@ class FlameScraper:
         # Track processed documents
         self.processed_docs = []
     
+    def test_connection(self) -> bool:
+        """Test connections to all documentation sources"""
+        sources = [
+            "https://pub.dev/documentation/flame/latest/",
+            "https://docs.flame-engine.org/latest/",
+            "https://api.github.com/repos/flame-engine/flame/contents/doc"
+        ]
+        
+        results = []
+        for url in sources:
+            try:
+                response = requests.get(url)
+                results.append(response.status_code == 200)
+                print(f"Connection to {url}: {'Success' if response.status_code == 200 else 'Failed'}")
+            except Exception as e:
+                print(f"Failed to connect to {url}: {e}")
+                results.append(False)
+        
+        return all(results)
+    
     def _get_flame_version(self) -> str:
         """Get current Flame version from pub.dev"""
         try:
