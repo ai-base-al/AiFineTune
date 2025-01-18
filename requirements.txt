@@ -6,6 +6,7 @@ attrs==24.3.0
 beautifulsoup4==4.12.3
 certifi==2024.12.14
 charset-normalizer==3.4.1
+ctransformers==0.2.27
 datasets==3.2.0
 dill==0.3.8
 filelock==3.16.1
@@ -25,6 +26,7 @@ packaging==24.2
 pandas==2.2.3
 pillow==11.1.0
 propcache==0.2.1
+py-cpuinfo==9.0.0
 pyarrow==19.0.0
 python-dateutil==2.9.0.post0
 pytz==2024.2

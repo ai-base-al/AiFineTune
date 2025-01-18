@@ -1,0 +1,9 @@
+{
+  "scrape_date": "2025-01-17T22:18:04.510294",
+  "flame_version": "1.23.0",
+  "sources": {
+    "pub_dev": "https://pub.dev/documentation/flame/latest/",
+    "docs": "https://docs.flame-engine.org/latest/",
+    "github": "https://github.com/flame-engine/flame/tree/main/doc"
+  }
+}
